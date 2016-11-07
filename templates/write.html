@@ -1,0 +1,17 @@
+{{ define "write" }}
+
+{{ template "header" }}
+
+<form action="/" id="form">
+  Name: <input type="text" name="title">
+  <input type="submit">
+</form>
+
+<br>
+<textarea rows="6" cols="50" name="comment">
+	Enter text here...
+</textarea>
+
+{{ template "footer" }}
+
+{{ end }}
