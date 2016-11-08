@@ -2,7 +2,12 @@
 
 {{ template "header" }}
 
-<h1> Index file </h1>
+<h1> Welcome </h1>
+{{ range . }}
+	<li><strong>{{ .Title }}</strong></li>
+	<br>
+{{ end }}
+
 
 {{ template "footer" }}
 
